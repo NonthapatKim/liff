@@ -9,11 +9,11 @@
 <body>
   <h1>Hello World!</h1>
   <p id="param"><b>Query Param: </b></p>
-  <!-- <img id="pictureUrl">
+  <img id="pictureUrl">
   <p id="userId"><b>userId:</b> </p>
   <p id="displayName"><b>displayName:</b> </p>
   <p id="statusMessage"><b>statusMessage:</b> </p>
-  <p id="decodedIDToken"><b>email:</b> </p> -->
+  <p id="decodedIDToken"><b>email:</b> </p>
   <script>
     // Query Params
     const queryString = decodeURIComponent(window.location.search);
@@ -21,7 +21,7 @@
     document.getElementById("param").append(params.get("param"));
   </script>
 
-  <!-- <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     async function getUserProfile() {
       const profile = await liff.getProfile()
@@ -42,6 +42,6 @@
       }
     }
     main()
-  </script> -->
+  </script>
 </body>
 </html>
